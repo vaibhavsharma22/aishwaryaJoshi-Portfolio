@@ -25,7 +25,7 @@ export const JumboTron = () => {
       </h1>
       <div className="h-3 " />
       <h1 className="relative z-30 font-sans text-xl tracking-wide text-center uppercase md:tracking-wider text-powder-blue-dark">
-        UI UX Designer
+       UX Designer
       </h1>
 
       <div
