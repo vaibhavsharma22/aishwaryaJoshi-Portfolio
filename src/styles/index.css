@@ -1,0 +1,95 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --powder-blue: #aedbfa;
+  --powder-blue-dark: #467191;
+  --cutty-sark: #5a827f4d;
+  --dove-gray: #707070;
+  --alabaster: #fbfbfb;
+  --silver: #c1c1c1;
+  --alto: #dedede;
+  --white-70: rgba(255, 255, 255, 0.7);
+}
+
+html,
+body {
+  @apply text-dove-gray;
+  @apply font-sans;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Write your own custom component styles here */
+
+/* hover-bg-animation-dark start */
+.hover-bg-animation-dark {
+  z-index: 0;
+}
+
+.hover-bg-animation-dark:hover {
+  color: white;
+}
+
+.hover-bg-animation-dark:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 100%;
+  background: var(--powder-blue-dark);
+  transition: all 0.2s ease-in;
+  z-index: -1;
+}
+
+.hover-bg-animation-dark:hover:before {
+  width: 100%;
+}
+
+/* hover-bg-animation-dark end */
+
+/* hover-bg-animation-light start */
+
+.hover-bg-animation-light {
+  z-index: 0;
+}
+
+.hover-bg-animation-light:hover {
+  color: var(--powder-blue-dark);
+}
+
+.hover-bg-animation-light:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: all 0.2s ease-in;
+  z-index: -1;
+}
+
+.hover-bg-animation-light:hover:before {
+  width: 100%;
+}
+
+/* hover-bg-animation-light end */
+
+.scroll-margin-top-15 {
+  scroll-margin-top: 3.75rem;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
